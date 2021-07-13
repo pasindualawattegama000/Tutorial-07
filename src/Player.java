@@ -1,54 +1,78 @@
-class Player {
-    String Name;
-    int age;
-    String type;
-    int wickets;
-    int runs;
-    double strikeRate;
+public class Player {
+    public String Name;
+    public int age;
+    public String type;
+    public int runsScored;
+    public int wickets;
+    public double runRate;
+    public double strikeRate;
 
-    Player (String name,int age,String type,int wickets,int runs, double strikeRate){
-        Name= name;
-        this.age=age;
-        this.type=type;
-        this.wickets=wickets;
-        this.runs=runs;
+    public Player(){}
+
+    public Player(String name, int age, String type, int runsScored, int wickets, double runRate, double strikeRate) {
+        Name = name;
+        this.age = age;
+        this.type = type;
+        this.runsScored = runsScored;
+        this.wickets = wickets;
+        this.runRate = runRate;
         this.strikeRate = strikeRate;
-
     }
-    String getName(){
+
+    public String getName() {
         return Name;
     }
-    void setName(String name){
-        Name=name;
+
+    public void setName(String name) {
+        Name = name;
     }
-    void  setAge(int age){
-        this.age=age;
-    }
-    int getage(){
+
+    public int getAge() {
         return age;
-
     }
-    void setType(String type){
-        this.type=type;
 
+    public void setAge(int age) {
+        this.age = age;
     }
-    String getType(){
+
+    public String getType() {
         return type;
     }
-    void setwickets(int wickets){
-        this.wickets=wickets;
 
+    public void setType(String type) {
+        this.type = type;
     }
-    int getwickets(){
+
+    public int getRunsScored() {
+        return runsScored;
+    }
+
+    public void setRunsScored(int runsScored) {
+        this.runsScored = runsScored;
+    }
+
+    public int getWickets() {
         return wickets;
-
-    }
-    void setRuns(int runs){
-        this.runs= runs;
-    }
-    int getRuns(){
-        return runs;
     }
 
+    public void setWickets(int wickets) {
+        this.wickets = wickets;
+    }
+
+    public double getRunRate() {
+        return runRate;
+    }
+
+    public void setRunRate(double runRate) {
+        this.runRate = runRate;
+    }
+
+    public double getStrikeRate() {
+        return strikeRate;
+    }
+
+    public void setStrikeRate(double strikeRate) {
+        this.strikeRate = strikeRate;
+    }
 }
-// hello
+
